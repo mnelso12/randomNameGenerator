@@ -1,8 +1,15 @@
 body {
 	font-family: 'Zilla Slab', serif;
 	text-align: center;
+	background-color: lavender;
+}
+
+h1 {
 	font-size: 100px;
-	background-color: yellow;
+}
+
+h2 {
+	font-size: 50px;
 }
 
 button {
