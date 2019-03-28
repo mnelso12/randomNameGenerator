@@ -1,6 +1,18 @@
 $( document ).ready(function() {
 
-	var roster = ["Alicia Weaver", "Alyssa Brasse", "Ari Cazeau", "Bing Li", "Catherine Atalig", "Clemone Reynolds", "Elaine Lau", "Erin Bouton", "Isabella Rivera", "Jessica Kukin", "Julie Margolin", "Katriona Durkin", "Leesett Nervil", "Sade Jansen", "Sanaa Mock", "Stacy Kim", "Sunjana Kulkarni", "Taylour Peters", "Tessa Sevieux", "Agnes Wong"];
+	//var roster = ["Alicia Weaver", "Alyssa Brasse", "Ari Cazeau", "Bing Li", "Catherine Atalig", "Clemone Reynolds", "Elaine Lau", "Erin Bouton", "Isabella Rivera", "Jessica Kukin", "Julie Margolin", "Katriona Durkin", "Leesett Nervil", "Sade Jansen", "Sanaa Mock", "Stacy Kim", "Sunjana Kulkarni", "Taylour Peters", "Tessa Sevieux", "Agnes Wong"];
+	var roster = [
+		"Lily",
+		"Josh",
+		"Zaid",
+		"Kyle",
+		"Claire",
+		"Julia",
+		"Sam",
+		"Heath",
+		"Da'Veed",
+		"Reeti",
+	];
 
 	$("#go").on("click", function(){
 		getName();
@@ -13,17 +25,17 @@ $( document ).ready(function() {
 
 	function getName() {
 		var num = Math.floor(Math.random() * roster.length);
-		$("#name").text(roster[num]);		
+		$("#name").text(roster[num]);
 	}
 
 	function getOrder() {
-		var arr = shuffle(roster); 
+		var arr = shuffle(roster);
 		var str = "";
 		for (var i=0; i<arr.length; i++) {
-			str = str + arr[i] + ',\n';		
+			str = str + arr[i] + ',\n';
 		}
 		console.log(str);
-		$("#classList").text(str);		
+		$("#classList").text(str);
 
 	}
 
@@ -45,4 +57,3 @@ $( document ).ready(function() {
 	}
 
 });
-
